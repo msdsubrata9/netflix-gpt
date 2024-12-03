@@ -1,6 +1,11 @@
+import { useState } from "react";
 import Header from "./Header";
 
 function Login() {
+  const [isLoginForm, setIsLoginForm] = useState(true);
+  function toggleSignInForm() {
+    setIsLoginForm(!isLoginForm);
+  }
   return (
     <div className="relative">
       <Header />
@@ -11,8 +16,19 @@ function Login() {
           alt="login page background"
         />
       </div>
-      <form className="w-3/12 absolute p-12 my-36 mx-auto right-0 left-0 text-white rounded bg-black bg-opacity-80">
-        <h1 className="font-bold text-3xl py-4">Sign In</h1>
+      <form className="w-4/12 absolute p-12 my-32 mx-auto right-0 left-0 text-white rounded bg-black bg-opacity-80">
+        <h1 className="font-bold text-3xl py-4">
+          {isLoginForm ? "Sign In" : "Sign Up"}
+        </h1>
+        {!isLoginForm && (
+          <>
+            <input
+              type="text"
+              placeholder="Full Name"
+              className="p-4 my-4 w-full bg-gray-700"
+            />
+          </>
+        )}
         <input
           type="email"
           placeholder="Email Address"
@@ -24,9 +40,13 @@ function Login() {
           className="p-4 my-4 w-full bg-gray-700"
         />
         <button className="p-4 my-6 bg-red-700 w-full rounded-lg">
-          Sign In
+          {isLoginForm ? "Sign In" : "Sign Up"}
         </button>
-        <p className="py-4 cursor-pointer">New to Netflix? Sign up now.</p>
+        <p className="cursor-pointer" onClick={toggleSignInForm}>
+          {isLoginForm
+            ? "New to Netflix? Sign up now."
+            : "Existing User to Netflix? Sign In Now."}
+        </p>
       </form>
     </div>
   );
