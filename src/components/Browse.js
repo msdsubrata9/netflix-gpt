@@ -8,9 +8,7 @@ function Browse() {
 
   function handleSignOut() {
     signOut(auth)
-      .then(() => {
-        navigate("/");
-      })
+      .then(() => {})
       .catch((error) => {
         navigate("/error");
       });
