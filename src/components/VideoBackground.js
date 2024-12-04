@@ -6,14 +6,13 @@ function VideoBackground({ movieId }) {
   useMovieTrailer(movieId);
 
   return (
-    <div>
+    <div className="relative w-full h-screen">
       <iframe
-        width="560"
-        height="315"
+        className="absolute top-0 left-0 w-full h-full z-0 pointer-events-auto"
         src={
           "https://www.youtube.com/embed/" +
           trailerVideo?.key +
-          "?si=otF2349Us8gLr81W"
+          "?autoplay=1&mute=1&controls=0&rel=0"
         }
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

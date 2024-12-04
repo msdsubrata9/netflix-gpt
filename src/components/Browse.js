@@ -19,16 +19,18 @@ function Browse() {
   }
 
   return (
-    <div>
-      <div className="flex justify-between">
-        <Header />
-        <div className="px-10 py-5 z-50">
-          <button
-            onClick={handleSignOut}
-            className="bg-slate-50 rounded-full border-2 border-black p-1 px-2 font-bold"
-          >
-            Sign Out
-          </button>
+    <div className="relative">
+      <div className="absolute top-0 left-0 w-full">
+        <div className="flex justify-between">
+          <Header />
+          <div className="px-10 py-5 z-50">
+            <button
+              onClick={handleSignOut}
+              className="bg-slate-50 rounded-full border-2 border-black p-1 px-2 font-bold"
+            >
+              Sign Out
+            </button>
+          </div>
         </div>
       </div>
       <MainContainer />
