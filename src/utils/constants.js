@@ -15,3 +15,9 @@ export const API_OPTIONS = {
 
 export const NOW_PLAYING_MOVIE_URL =
   "https://api.themoviedb.org/3/movie/now_playing?page=1";
+
+export const PLAY_BUTTON_LOGO =
+  "https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-play-icon-png-image_956416.jpg";
+
+export const MORE_INFO_BUTTON_LOGO =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Minimalist_info_Icon.png/800px-Minimalist_info_Icon.png";
