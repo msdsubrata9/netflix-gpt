@@ -2,9 +2,11 @@ import { signOut } from "firebase/auth";
 import Header from "./Header";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 
 function Browse() {
   const navigate = useNavigate();
+  useNowPlayingMovies();
 
   function handleSignOut() {
     signOut(auth)
