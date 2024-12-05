@@ -36,6 +36,9 @@
 - Browse Page CSS Chages using Tailwind CSS
 - Build usePopularMovies custom hook
 - Build Top Rated Movies, Upcoming Movies, TV Trendings List by using custom hooks
+- GPT Search Feature
+- GPT Search Bar
+- (CHALLENGING FEATURE) Multi-language Feature in APP
 
 # Features
 
