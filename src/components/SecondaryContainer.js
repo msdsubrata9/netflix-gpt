@@ -8,13 +8,16 @@ function SecondaryContainer() {
       <div className="left-0 w-full bg-black bg-opacity-90 shadow-md p-4">
         <div className="-mt-40 relative z-50">
           <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies} />
-          <MovieList title={"Trending"} movies={movies.nowPlayingMovies} />
-          <MovieList title={"Popular"} movies={movies.nowPlayingMovies} />
+          <MovieList title={"Popular"} movies={movies.popularMovies} />
           <MovieList
-            title={"Upcoming Movies"}
-            movies={movies.nowPlayingMovies}
+            title={"Top Rated Movies"}
+            movies={movies.topRatedMovies}
           />
-          <MovieList title={"Horror"} movies={movies.nowPlayingMovies} />
+          <MovieList title={"Upcoming Movies"} movies={movies.upcomingMovies} />
+          <MovieList
+            title={"Trending TV Shows"}
+            movies={movies.trendingTVShows}
+          />
         </div>
       </div>
     )

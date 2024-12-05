@@ -16,6 +16,18 @@ export const API_OPTIONS = {
 export const NOW_PLAYING_MOVIE_URL =
   "https://api.themoviedb.org/3/movie/now_playing?page=1";
 
+export const POPULAR_MOVIE_URL =
+  "https://api.themoviedb.org/3/movie/popular?page=1";
+
+export const TOP_RATED_MOVIE_URL =
+  "https://api.themoviedb.org/3/movie/top_rated?page=1";
+
+export const UPCOMING_MOVIE_URL =
+  "https://api.themoviedb.org/3/movie/upcoming?page=1";
+
+export const TV_TRENDING_DAY_URL =
+  "https://api.themoviedb.org/3/trending/tv/day";
+
 export const PLAY_BUTTON_LOGO =
   "https://i.pinimg.com/736x/2c/86/cd/2c86cd6329762b92e6341fb8e725156e.jpg";
 

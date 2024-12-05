@@ -5,10 +5,18 @@ import { useNavigate } from "react-router-dom";
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import MainContainer from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
+import usePopularMovies from "../hooks/usePopularMovies";
+import useTopRatedMovies from "../hooks/useTopRatedMovies";
+import useUpcomingMovies from "../hooks/useUpcomingMovies";
+import useTrendingOnTV from "../hooks/useTrendingOnTV";
 
 function Browse() {
   const navigate = useNavigate();
   useNowPlayingMovies();
+  usePopularMovies();
+  useTopRatedMovies();
+  useUpcomingMovies();
+  useTrendingOnTV();
 
   function handleSignOut() {
     signOut(auth)
