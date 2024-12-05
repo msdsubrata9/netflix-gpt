@@ -21,3 +21,5 @@ export const PLAY_BUTTON_LOGO =
 
 export const MORE_INFO_BUTTON_LOGO =
   "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Minimalist_info_Icon.png/800px-Minimalist_info_Icon.png";
+
+export const POSTER_CDN_URL = "https://image.tmdb.org/t/p/w500";
