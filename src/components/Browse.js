@@ -44,9 +44,9 @@ function Browse() {
   return (
     <div className="relative">
       <div className="absolute top-0 left-0 w-full">
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row">
           <Header />
-          <div className="px-10 py-5 z-50">
+          <div className="flex justify-between md:block px-10 py-20 md:py-5 z-50">
             {showGptSearch && (
               <select
                 className="bg-slate-50 rounded-full border-2 border-black p-1 m-1 px-2 font-bold outline-none focus:ring-0"

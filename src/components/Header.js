@@ -27,7 +27,7 @@ function Header() {
   return (
     <div>
       <div className="absolute w-full bg-gradient-to-b from-black z-10">
-        <img className="w-40" src={LOGO} alt="logo" />
+        <img className="w-40 mx-auto md:mx-0" src={LOGO} alt="logo" />
       </div>
     </div>
   );

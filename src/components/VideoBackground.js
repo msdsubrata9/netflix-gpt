@@ -8,7 +8,7 @@ function VideoBackground({ movieId }) {
   return (
     <div className="relative w-full h-screen">
       <iframe
-        className="absolute top-0 left-0 w-full h-full z-0 pointer-events-auto"
+        className="absolute -top-40 md:top-0 left-0 w-full h-full z-0 pointer-events-auto"
         src={
           "https://www.youtube.com/embed/" +
           trailerVideo?.key +
