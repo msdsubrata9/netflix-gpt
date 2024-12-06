@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "netflixgpt-34dda"
-  }
+    "default": "moviesphere-79307",
+    "build": "moviesphere-79307"
+  },
+  "targets": {},
+  "etags": {}
 }
